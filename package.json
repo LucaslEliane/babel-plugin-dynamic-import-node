@@ -1,5 +1,5 @@
 {
-  "name": "babel-plugin-dynamic-import-node",
+  "name": "babel-plugin-dynamic-import-node-filter",
   "version": "2.2.0",
   "description": "Babel plugin to transpile import() to a deferred require(), for node",
   "main": "lib/index.js",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/airbnb/babel-plugin-dynamic-import-node.git"
+    "url": "git+https://github.com/airbnb/babel-plugin-dynamic-import-node-filter.git"
   },
   "keywords": [
     "babel",
@@ -38,9 +38,9 @@
   "author": "Jordan Gensler <jordan.gensler@airbnb.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/airbnb/babel-plugin-dynamic-import-node/issues"
+    "url": "https://github.com/airbnb/babel-plugin-dynamic-import-node-filter/issues"
   },
-  "homepage": "https://github.com/airbnb/babel-plugin-dynamic-import-node#readme",
+  "homepage": "https://github.com/airbnb/babel-plugin-dynamic-import-node-filter#readme",
   "devDependencies": {
     "airbnb-js-shims": "^2.1.1",
     "babel-cli": "^6.26.0",

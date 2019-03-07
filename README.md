@@ -1,4 +1,4 @@
-# babel-plugin-dynamic-import-node
+# babel-plugin-dynamic-import-node-filter
 
 Babel plugin to transpile `import()` to a deferred `require()`, for node. Matches the [proposed spec](https://github.com/domenic/proposal-import-function).
 
@@ -26,10 +26,15 @@ npm install babel-plugin-dynamic-import-node --save-dev
 
 - *`noInterop`* - A boolean value, that if true will not interop the require calls. Useful to avoid using `require('module').default` on commonjs modules.
 
+- *`errorFilter`* - A RegExp String, to filter some useless error which been trigger by async bundle.
+
 ```json
 {
   "plugins": [
-    ["dynamic-import-node", { "noInterop": true }]
+    ["dynamic-import-node", {
+      "noInterop": true,
+      "errorFilter": '/[object Object]/'
+    }]
   ]
 }
 ```
